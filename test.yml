@@ -2,12 +2,14 @@
 - name: jira awx
   hosts: localhost
   tasks:
-  - name: Get an issue
-    community.general.jira:
-      uri: https://bttcloud.atlassian.net
-      username: karolis.zivulskas@bttcloud.com
-      password: ATATT3xFfGF0NWSB-n_KuMAxKRocy4Hi5BV4Ibux_adT0TZJBp1MRPWd7G7W2U42oEQt9r7L2IYZ9WFDIq02U4WbsoiMs7xkhH2>
-      project: BRAVO
-      operation: fetch
-      issue: BRAVO-65
+  - name: Create an issue
+      community.general.jira:
+        uri: https://bttcloud.atlassian.net
+        username: karolis.zivulskas@bttcloud.com
+        password: ATATT3xFfGF0NWSB-n_KuMAxKRocy4Hi5BV4Ibux_adT0TZJBp1MRPWd7G7W2U42oEQt9r7L2IYZ9WFDIq02U4WbsoiMs7xkhH2>          project: BRAVO
+        operation: create
+        summary: Creating issue with awx
+        description: For testing purposes
+        assignee: 6406e9174d5e4b44e233ca2f
+        issuetype: Maintenance
     register: issue
