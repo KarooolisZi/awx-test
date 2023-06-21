@@ -1,0 +1,6 @@
+- shell: ansible -—version
+  register: ansible_v
+  delegate_to: localhost 
+
+- debug:
+    msg: “{{ ansible_v }}”
