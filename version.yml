@@ -1,5 +1,5 @@
 ---
-- name: awx jira
+- name: awx ansible version
   hosts: localhost
   tasks:
   - shell: ansible -—version
