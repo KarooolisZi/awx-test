@@ -1,10 +1,12 @@
 ---
-- name: Get an issue
-  community.general.jira:
+- name: jira awx
+  task:
+  - name: Get an issue
+    community.general.jira:
       uri: https://bttcloud.atlassian.net
       username: karolis.zivulskas@bttcloud.com
       password: ATATT3xFfGF0NWSB-n_KuMAxKRocy4Hi5BV4Ibux_adT0TZJBp1MRPWd7G7W2U42oEQt9r7L2IYZ9WFDIq02U4WbsoiMs7xkhH2>
       project: BRAVO
       operation: fetch
       issue: BRAVO-65
-  register: issue
+    register: issue
