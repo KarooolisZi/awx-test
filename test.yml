@@ -1,6 +1,6 @@
 ---
 - name: jira awx
-  task:
+  tasks:
   - name: Get an issue
     community.general.jira:
       uri: https://bttcloud.atlassian.net
