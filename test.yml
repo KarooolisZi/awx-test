@@ -1,6 +1,6 @@
 ---
 - name: jira awx
-  hosts: local
+  hosts: localhost
   tasks:
   - name: Get an issue
     community.general.jira:
