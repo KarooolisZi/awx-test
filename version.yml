@@ -2,9 +2,9 @@
 - name: awx jira
   hosts: localhost
   tasks:
-- shell: ansible -—version
-  register: ansible_v
-  delegate_to: localhost 
+  - shell: ansible -—version
+    register: ansible_v
+    delegate_to: localhost 
 
-- debug:
-    msg: “{{ ansible_v }}”
+  - debug:
+      msg: “{{ ansible_v }}”
