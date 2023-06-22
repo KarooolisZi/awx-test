@@ -6,7 +6,7 @@
     community.general.jira:
       uri: https://bttcloud.atlassian.net
       username: karolis.zivulskas@bttcloud.com
-      password: ATATT3xFfGF0NWSB-n_KuMAxKRocy4Hi5BV4Ibux_adT0TZJBp1MRPWd7G7W2U42oEQt9r7L2IYZ9WFDIq02U4WbsoiMs7xkhH2>
+      password: ATATT3xFfGF0NWSB-n_KuMAxKRocy4Hi5BV4Ibux_adT0TZJBp1MRPWd7G7W2U42oEQt9r7L2IYZ9WFDIq02U4WbsoiMs7xkhH2ShPWAQYmXg1UnmVCFMk1liEdeGaHTPl8omH8PfWYSlTs5XWbQ_BfQLZV6UUAztc2YvJYZon9GR81WTxZfwbs=0C65845F
       project: BRAVO
       operation: create
       summary: Creating issue with awx
