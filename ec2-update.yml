@@ -1,6 +1,6 @@
 ---
 - name: update ec2
-  hosts: localhost
+  hosts: ec2-3-124-204-222.eu-central-1.compute.amazonaws.com
   tasks:
       - name: ansible ping
         ansible.builtin.ping:
