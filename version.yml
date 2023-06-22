@@ -2,7 +2,7 @@
 - name: awx ansible version
   hosts: localhost
   tasks:
-  - shell: ansible -—version
+  - shell: ansible --version
     register: ansible_v
     delegate_to: localhost 
 
