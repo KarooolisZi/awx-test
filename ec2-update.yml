@@ -11,7 +11,7 @@
        msg: "{{ msg.split('\n') }}"       
      tags: debug_info
    - name: update
-     shell: yum update -y
+     shell: sudo yum update -y
     # - name: Get an issue
     #   community.general.jira:
     #     uri: https://bttcloud.atlassian.net
