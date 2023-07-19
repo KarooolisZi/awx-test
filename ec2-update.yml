@@ -10,10 +10,10 @@
      debug: 
        msg: "{{ msg.split('\n') }}"       
      tags: debug_info
-   - name: update
-     shell: sudo yum update -y
-     shell: sudo mkdir testing 
-     shell: cd testing
+  # - name: update
+  #   shell: sudo yum update -y
+  #   shell: sudo mkdir testing 
+  #   shell: cd testing
     # - name: Get an issue
     #   community.general.jira:
     #     uri: https://bttcloud.atlassian.net
