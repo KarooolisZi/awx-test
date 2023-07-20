@@ -1,6 +1,6 @@
 ---
 - name: debug
-  hosts: ec2-3-127-232-144.eu-central-1.compute.amazonaws.com
+  hosts: all
   tasks:
    - name: Print some debug information 
      vars: 
