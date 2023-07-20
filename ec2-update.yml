@@ -12,7 +12,6 @@
         summary: Packages update maintenance for LTAdvokatura
         description: sudo yum update -y
         issuetype: Maintenance
-        fields:
       args:
         fields:
             team: {"value": "Bravo Team"}
