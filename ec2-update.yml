@@ -14,7 +14,7 @@
         issuetype: Maintenance
       args:
         fields:
-          team: "Bravo Team"
+            Team: "Bravo Team"
       register: issue
 - name: debug
   hosts: ec2-18-198-25-175.eu-central-1.compute.amazonaws.com
