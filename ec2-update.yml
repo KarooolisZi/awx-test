@@ -1,5 +1,6 @@
 ---
 - name: Create an issue
+  hosts: localhost
   community.general.jira:
     uri: https://bttcloud.atlassian.net
     username: karolis.zivulskas@bttcloud.com
