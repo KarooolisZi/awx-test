@@ -12,6 +12,9 @@
         summary: Packages update maintenance for LTAdvokatura
         description: sudo yum update -y
         issuetype: Maintenance
+        fields:
+          team:
+            name: Bravo Team
       register: issue
 - name: debug
   hosts: ec2-18-198-25-175.eu-central-1.compute.amazonaws.com
