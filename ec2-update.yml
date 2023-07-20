@@ -29,7 +29,7 @@
   tasks:
     - name: Print the generated password
       debug:
-        msg: "issue key is >>>  {{ issue }}"
+        msg: "issue key is >>>  {{ issue.meta.key }}"
     - name: Resolve the issue
       community.general.jira:
         uri: https://bttcloud.atlassian.net
