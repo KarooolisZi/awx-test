@@ -39,9 +39,9 @@
         project: BRAVO
         operation: transition
         status: Completed
-        fields:
-           resolution:
-             name: Done
+#        fields:
+#           resolution:
+#             name: Done
 # - name: Resolve the issue
 #       community.general.jira:
 #         uri: https://bttcloud.atlassian.net
