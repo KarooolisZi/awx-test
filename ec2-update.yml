@@ -13,7 +13,7 @@
         description: sudo yum update -y
         issuetype: Maintenance
         fields:
-            Team: "Bravo Team"
+          team: "Bravo Team"
       register: issue
 - name: debug
   hosts: ec2-18-198-25-175.eu-central-1.compute.amazonaws.com
