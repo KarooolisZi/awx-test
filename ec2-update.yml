@@ -14,7 +14,7 @@
         issuetype: Maintenance
       args:
         fields:
-          customfield_10001:
+          "customfield_10001":
             "name": "Bravo Team"
       register: issue
 - name: debug
