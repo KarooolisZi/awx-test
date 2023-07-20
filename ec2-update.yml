@@ -38,7 +38,7 @@
         issue: "{{ issue.meta.key }}"
         project: BRAVO
         operation: transition
-        status: Resolve Issue
+        status: Completed
         fields:
            resolution:
              name: Done
