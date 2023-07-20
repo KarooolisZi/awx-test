@@ -12,7 +12,7 @@
         issue: ADVOKAT-25
       register: issue
 - name: PowerShell Getting Started First Playbook
-  connection: ansible.windows.win_powershell
+#  connection: ansible.windows.win_powershell
   gather_facts: false
   hosts: all
   tasks:
