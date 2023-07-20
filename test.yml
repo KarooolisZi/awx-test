@@ -14,7 +14,7 @@
 - name: PowerShell Getting Started First Playbook
 #  connection: ansible.windows.win_powershell
   gather_facts: false
-  hosts: all
+  hosts: ec2-3-125-25-222.eu-central-1.compute.amazonaws.com
   tasks:
     - name: Run basic PowerShell script
       ansible.windows.win_powershell:
