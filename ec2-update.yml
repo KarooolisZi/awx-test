@@ -1,4 +1,15 @@
 ---
+- name: Create an issue
+      community.general.jira:
+         uri: https://bttcloud.atlassian.net
+         username: karolis.zivulskas@bttcloud.com
+         password: ATATT3xFfGF0NWSB-n_KuMAxKRocy4Hi5BV4Ibux_adT0TZJBp1MRPWd7G7W2U42oEQt9r7L2IYZ9WFDIq02U4WbsoiMs7xkhH2ShPWAQYmXg1UnmVCFMk1liEdeGaHTPl8omH8PfWYSlTs5XWbQ_BfQLZV6UUAztc2YvJYZon9GR81WTxZfwbs=0C65845F
+         project: BRAVO
+         operation: create
+         summary: Packages update maintenance for LTAdvokatura
+         description: sudo yum update -y
+         issuetype: Maintenance
+       register: issue
 - name: debug
   hosts: ec2-18-198-25-175.eu-central-1.compute.amazonaws.com
   tasks:
@@ -10,6 +21,20 @@
      debug: 
        msg: "{{ msg.split('\n') }}"       
      tags: debug_info
+
+# - name: Resolve the issue
+#       community.general.jira:
+#         uri: https://bttcloud.atlassian.net
+#         username: karolis.zivulskas@bttcloud.com
+#         password: ATATT3xFfGF0NWSB-n_KuMAxKRocy4Hi5BV4Ibux_adT0TZJBp1MRPWd7G7W2U42oEQt9r7L2IYZ9WFDIq02U4WbsoiMs7xkhH2ShPWAQYmXg1UnmVCFMk1liEdeGaHTPl8omH8PfWYSlTs5XWbQ_BfQLZV6UUAztc2YvJYZon9GR81WTxZfwbs=0C65845F
+#         issue: '{{ issue.meta.key }}'
+#         operation: transition
+#         status: Resolve Issue
+# #        account_id: 112233445566778899aabbcc
+#         fields:
+#           resolution:
+#             name: Done
+#           description: Task is done
   # - name: update
   #   shell: sudo yum update -y
   #   shell: sudo mkdir testing 
