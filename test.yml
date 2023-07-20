@@ -19,7 +19,8 @@
     - name: Run basic PowerShell script
       ansible.windows.win_powershell:
         error_action: stop
-        script: echo "Hello World"
+        script: |
+          echo "Hello World"
   # - name: Create an issue
   #   community.general.jira:
   #     uri: https://bttcloud.atlassian.net
