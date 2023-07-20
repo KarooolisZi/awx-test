@@ -11,6 +11,16 @@
         operation: fetch
         issue: ADVOKAT-25
       register: issue
+- name: PowerShell Getting Started First Playbook
+	connection: ansible.windows.win_powershell
+	gather_facts: false
+	hosts: all
+	tasks:
+	  - name: Run basic PowerShell script
+	    ansible.windows.win_powershell:
+	      error_action: stop
+	      script: |
+	        echo "Hello World"
   # - name: Create an issue
   #   community.general.jira:
   #     uri: https://bttcloud.atlassian.net
