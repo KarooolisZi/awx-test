@@ -11,8 +11,10 @@
         operation: fetch
         issue: ADVOKAT-25
       register: issue
+      
     - name: Maintenance task conditional
       register: maintenance_done
+      ignore_errors: yes
 - name: PowerShell Getting Started First Playbook
 #  connection: ansible.windows.win_powershell
   gather_facts: false
