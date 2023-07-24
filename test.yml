@@ -11,6 +11,8 @@
         operation: fetch
         issue: ADVOKAT-25
       register: issue
+    - name: Maintenance task conditional
+      register: maintenance_done
 - name: PowerShell Getting Started First Playbook
 #  connection: ansible.windows.win_powershell
   gather_facts: false
@@ -21,6 +23,7 @@
         error_action: stop
         script: |
           echo "Hello World"
+      when: maintenance_done is failed
   # - name: Create an issue
   #   community.general.jira:
   #     uri: https://bttcloud.atlassian.net
