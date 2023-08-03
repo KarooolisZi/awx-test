@@ -21,10 +21,8 @@
   tasks:
     - name: Run basic PowerShell script
       ansible.windows.win_powershell:
-        error_action: stop
         script: |
           echo "Hello World"
-      when: maintenance_done is failed
   # - name: Create an issue
   #   community.general.jira:
   #     uri: https://bttcloud.atlassian.net
