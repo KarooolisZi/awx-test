@@ -1,4 +1,15 @@
 ---
+- name: debug
+  hosts: ec2-18-198-25-175.eu-central-1.compute.amazonaws.com
+  tasks:
+    - name: Print some debug information 
+      vars: 
+        msg: |
+           Ansible Distribution: {{ ansible_distribution }}
+           Ansible Dist version: {{ ansible_distribution_version }}
+      debug: 
+        msg: "{{ msg.split('\n') }}"
+      tags: debug_info
 - name: awx jira create
   hosts: localhost
   tasks:
@@ -16,17 +27,6 @@
         fields:
           customfield_10001: "2"
       register: issue
-- name: debug
-  hosts: ec2-18-198-25-175.eu-central-1.compute.amazonaws.com
-  tasks:
-    - name: Print some debug information 
-      vars: 
-        msg: |
-           Ansible Distribution: {{ ansible_distribution }}
-           Ansible Dist version: {{ ansible_distribution_version }}
-      debug: 
-        msg: "{{ msg.split('\n') }}"       
-      tags: debug_info
 - name: awx jira close
   hosts: localhost
   tasks:
